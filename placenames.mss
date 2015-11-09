@@ -172,26 +172,26 @@
 }
 
 #placenames-small::hamlet {
-  [place = 'hamlet'],
-  [place = 'locality'],
-  [place = 'neighbourhood'],
-  [place = 'isolated_dwelling'],
-  [place = 'farm'] {
-    [zoom >= 15] {
+  [place = 'hamlet'] {
+    [zoom >= 12][zoom < 17] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: 10;
       text-fill: @placenames;
       text-face-name: @book-fonts;
       text-halo-radius: 1.5;
       text-halo-fill: rgba(255,255,255,0.6);
-      text-wrap-width: 45;
+      text-wrap-width: 50;
       text-min-distance: 10;
-    }
-    [zoom >= 16] {
-      text-size: 12;
-      text-wrap-width: 60;
-      text-fill: @placenames-light;
-      text-halo-fill: white;
+      [zoom >= 14] {
+        text-fill: @placenames-light;
+        text-halo-fill: white;
+        text-size: 11;
+        text-wrap-width: 65;
+      }
+      [zoom >= 16] {
+        text-size: 13;
+        text-wrap-width: 75;
+      }
     }
   }
 }
