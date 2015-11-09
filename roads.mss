@@ -2,9 +2,9 @@
 
 //road colors for major roads were generated with scripts/generate_road_colors.py
 @motorway-fill: #e892a2; // Lch(70,35,10), error 0.5
-@trunk-fill: #f9b29c; // Lch(79,33,42), error 0.7
-@primary-fill: #fcd6a4; // Lch(88,31,74), error 1.7
-@secondary-fill: #f7fabf; // Lch(97,29,106), error 1.7
+@trunk-fill: #F78F20;//#f9b29c; // Lch(79,33,42), error 0.7
+@primary-fill: #F9A54D;//#fcd6a4; // Lch(88,31,74), error 1.7
+@secondary-fill: #ffffff;//#f7fabf; // Lch(97,29,106), error 1.7
 @tertiary-fill: #ffffff;
 @residential-fill: #ffffff;
 @service-fill: @residential-fill;
@@ -23,8 +23,8 @@
 @helipad-fill: @aeroway-fill;
 
 @motorway-low-zoom: #e66e89; // Lch(62,50,10), error 0.7
-@trunk-low-zoom: #fa9476; // Lch(72,50,42), error 0.8
-@primary-low-zoom: #f8c171; // Lch(82,50,74), error 2.1
+@trunk-low-zoom: #F78F20;//#fa9476; // Lch(72,50,42), error 0.8
+@primary-low-zoom: #FAB771;//#f8c171; // Lch(82,50,74), error 2.1
 @secondary-low-zoom: #e6ef89; // Lch(92,50,106), error 2.2
 
 @default-casing: white;
@@ -56,7 +56,7 @@
 @service-construction: #aaa;
 
 @destination-marking: #c2e0ff;
-@private-marking: #efa9a9;
+@private-marking: #FAB771;//#efa9a9;
 @private-marking-for-red: #C26363;
 
 @tunnel-casing: grey;
