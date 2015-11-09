@@ -1,7 +1,7 @@
 scale: 1
-metatile: 4
+metatile: 2
 name: "Hartamd Carto"
-description: "A faithful reimplementation of the standard OpenStreetMap style"
+description: "hartamd.com style"
 bounds: &world
   - -180
   - -85.05112877980659
