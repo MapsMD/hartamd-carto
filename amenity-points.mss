@@ -6,7 +6,7 @@
 @transportation-text: #0066ff;
 @airtransport: #8461C4;
 @health-color: #da0092;
-@amenity-brown: #734a08;
+@amenity-brown: #310c0c; //#734a08;
 @man-made-icon: #555;
 @landform-color: #d08f55;
 
