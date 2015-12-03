@@ -22,8 +22,8 @@
 @retail-line: #D99C95;      // Lch(70,25,30)
 @commercial: #F2DAD9;       // Lch(89,8.5,25)
 @commercial-line: #D1B2B0;  // Lch(75,12,25)
-@industrial: #EBDBE8;       // Lch(89,9,330)
-@industrial-line: #C6B3C3;  // Lch(75,11,330)
+@industrial: #dfdbd4; //#EBDBE8;       // Lch(89,9,330)
+@industrial-line: #9c9994; //#C6B3C3;  // Lch(75,11,330)
 @railway: @industrial;
 @railway-line: @industrial-line;
 @farmland: #EDDDC9;         // Lch(89,12,80) (Also used for farm)
