@@ -248,19 +248,19 @@
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
 
       [zoom=8] {
-        polygon-fill: lighten(@forest,18%);
+        polygon-fill: lighten(@forest,10%);
       }
       [zoom=9] {
-        polygon-fill: lighten(@forest,16%);
+        polygon-fill: lighten(@forest,8%);
       }
       [zoom=10] {
-        polygon-fill: lighten(@forest,14%);
+        polygon-fill: lighten(@forest,6%);
       }
       [zoom=11] {
-        polygon-fill: lighten(@forest,12%);
+        polygon-fill: lighten(@forest,4%);
       }
       [zoom=12] {
-        polygon-fill: lighten(@forest,10%);
+        polygon-fill: lighten(@forest,2%);
       }
     }
   }
