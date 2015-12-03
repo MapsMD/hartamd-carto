@@ -16,7 +16,7 @@
 
 // --- "base" landuses ---
 
-@residential: #e9e5dc; //#e0dfdf;      // Lch(89,0,0)
+@residential: #f2efe9; //#e0dfdf;      // Lch(89,0,0)
 @residential-line: #B9B9B9; // Lch(75,0,0)
 @retail: #FFD6D1;           // Lch(89,16,30)
 @retail-line: #D99C95;      // Lch(70,25,30)
