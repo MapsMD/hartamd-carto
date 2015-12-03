@@ -246,6 +246,22 @@
       polygon-fill: @forest;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
+
+      [zoom=8] {
+        polygon-fill: lighten(@forest,50%);
+      }
+      [zoom=9] {
+        polygon-fill: lighten(@forest,40%);
+      }
+      [zoom=10] {
+        polygon-fill: lighten(@forest,30%);
+      }
+      [zoom=11] {
+        polygon-fill: lighten(@forest,20%);
+      }
+      [zoom=12] {
+        polygon-fill: lighten(@forest,10%);
+      }
     }
   }
 
