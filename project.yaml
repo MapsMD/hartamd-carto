@@ -101,10 +101,10 @@ Layer:
 #      minzoom: 1
 #      maxzoom: 3
 #    advanced: {}
-#  - id: "landcover-low-zoom"
-#    name: "landcover-low-zoom"
-#    class: ""
-#    geometry: "polygon"
+  - id: "landcover-low-zoom"
+    name: "landcover-low-zoom"
+    class: ""
+    geometry: "polygon"
     <<: *extents
     Datasource:
       <<: *osm2pgsql
