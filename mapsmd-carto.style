@@ -1,5 +1,4 @@
-# This is the .style file for OpenStreetMap Carto, which is currently
-# the same as the upstream osm2pgsql style
+# This is the .style file for maps.md Carto, 
 
 # OsmType  Tag          DataType     Flags
 node,way   access       text         linear
@@ -103,51 +102,3 @@ node,way    fixme                   text    delete
 node,way    created_by              text    delete
 node,way    odbl                    text    delete
 node,way    odbl:note               text    delete
-node,way    SK53_bulk:load          text    delete
-
-# Lots of import tags
-# TIGER (US)
-node,way    tiger:*                 text    delete
-
-# NHD (US)
-# NHD has been converted every way imaginable
-node,way    NHD:*                   text    delete
-node,way    nhd:*                   text    delete
-
-# GNIS (US)
-node,way    gnis:*                  text    delete
-
-# Geobase (CA)
-node,way    geobase:*               text    delete
-# NHN (CA)
-node,way    accuracy:meters         text    delete
-node,way    sub_sea:type            text    delete
-node,way    waterway:type           text    delete
-
-# KSJ2 (JA)
-# See also note:ja and source_ref above
-node,way    KSJ2:*                  text    delete
-# Yahoo/ALPS (JA)
-node,way    yh:*                    text    delete
-
-# osak (DK)
-node,way    osak:*                  text    delete
-
-# kms (DK)
-node,way    kms:*                   text    delete
-
-# ngbe (ES)
-# See also note:es and source:file above
-node,way    ngbe:*                  text    delete
-
-# naptan (UK)
-node,way    naptan:*                text    delete
-
-# Corine (CLC) (Europe)
-node,way    CLC:*                   text    delete
-
-# misc
-node,way    3dshapes:ggmodelk       text    delete
-node,way    AND_nosr_r              text    delete
-node,way    import                  text    delete
-node,way    it:fvg:*                text    delete
