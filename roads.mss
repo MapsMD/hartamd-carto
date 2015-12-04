@@ -2,38 +2,38 @@
 
 //road colors for major roads were generated with scripts/generate_road_colors.py
 @motorway-fill: #e892a2; // Lch(70,35,10), error 0.5
-@trunk-fill: #F78F20;//#f9b29c; // Lch(79,33,42), error 0.7
-@primary-fill: #F9A54D;//#fcd6a4; // Lch(88,31,74), error 1.7
+@trunk-fill: #d2363d;//#f9b29c; // Lch(79,33,42), error 0.7
+@primary-fill: #B86854;//#fcd6a4; // Lch(88,31,74), error 1.7
 @secondary-fill: #ffffff;//#f7fabf; // Lch(97,29,106), error 1.7
 @tertiary-fill: #ffffff;
 @residential-fill: #ffffff;
 @service-fill: @residential-fill;
 @living-street-fill: #ededed;
-@pedestrian-fill: #dddde8;
+@pedestrian-fill: #E9F6F6;
 @raceway-fill: pink;
 @road-fill: #ddd;
-@footway-fill: salmon;
+@footway-fill: #E1886E;
 @steps-fill: @footway-fill;
 @cycleway-fill: blue;
 @bridleway-fill: green;
-@track-fill: #996600;
+@track-fill: #505151;
 @aeroway-fill: #bbc;
 @runway-fill: @aeroway-fill;
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
 
 @motorway-low-zoom: #e66e89; // Lch(62,50,10), error 0.7
-@trunk-low-zoom: #F78F20;//#fa9476; // Lch(72,50,42), error 0.8
-@primary-low-zoom: #FAB771;//#f8c171; // Lch(82,50,74), error 2.1
+@trunk-low-zoom: #CE2028;//#fa9476; // Lch(72,50,42), error 0.8
+@primary-low-zoom: #B86854;//#f8c171; // Lch(82,50,74), error 2.1
 @secondary-low-zoom: #e6ef89; // Lch(92,50,106), error 2.2
 
 @default-casing: white;
 @motorway-casing: #dc2a67; // Lch(50,70,10), error 1.1
-@trunk-casing: #c84e2f; // Lch(50,65,42), error 0.7
-@primary-casing: #a06b00; // Lch(50,60,74), error 1.6
-@secondary-casing: #707d05; // Lch(50,55,106), error 1.9
-@tertiary-casing: #8f8f8f;
-@residential-casing: #bbb;
+@trunk-casing: #0C2227; // Lch(50,65,42), error 0.7
+@primary-casing: #0C2227; // Lch(50,60,74), error 1.6
+@secondary-casing: #717676; // Lch(50,55,106), error 1.9
+@tertiary-casing: #717676;
+@residential-casing: #717676;
 @road-casing: @residential-casing;
 @service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
@@ -46,18 +46,19 @@
 @track-casing: @default-casing;
 
 @motorway-low-zoom-casing: #c24e6b; // Lch(50,50,10), error 0.8
-@trunk-low-zoom-casing: #cf6649; // Lch(56,55,42), error 0.9
-@primary-low-zoom-casing: #c38a27; // Lch(62,60,74), error 2.1
-@secondary-low-zoom-casing: #9eae23; // Lch(68,65,106), error 2.3
+@trunk-low-zoom-casing: #717676; // Lch(56,55,42), error 0.9
+@primary-low-zoom-casing: #717676; // Lch(62,60,74), error 2.1
+@secondary-low-zoom-casing: #717676; // Lch(68,65,106), error 2.3
 
 @unimportant-road: @residential-casing;
 
-@residential-construction: #aaa;
-@service-construction: #aaa;
+@residential-construction: #4D7677;
+@service-construction: #4D7677;
 
 @destination-marking: #c2e0ff;
-@private-marking: #FAB771;//#efa9a9;
+@private-marking: #505151;//#efa9a9;
 @private-marking-for-red: #C26363;
+@construction-marking: #DDE9EA;
 
 @tunnel-casing: grey;
 @bridge-casing: black;
@@ -154,7 +155,7 @@
 @road-width-z16:                  3.5;
 @service-width-z16:               3.5;
 @minor-service-width-z16:         2;
-@footway-width-z16:               1.3;
+@footway-width-z16:               2;
 @cycleway-width-z16:              0.9;
 
 @motorway-width-z17:             18;
@@ -263,8 +264,8 @@
 @halo-color-for-minor-road: white;
 
 @motorway-oneway-arrow-color:     darken(@motorway-casing, 25%);
-@trunk-oneway-arrow-color:        darken(@trunk-casing, 25%);
-@primary-oneway-arrow-color:      darken(@primary-casing, 15%);
+@trunk-oneway-arrow-color:        #fff;//darken(@trunk-casing, 25%);
+@primary-oneway-arrow-color:      #fff;//darken(@primary-casing, 15%);
 @secondary-oneway-arrow-color:    darken(@secondary-casing, 10%);
 @tertiary-oneway-arrow-color:     darken(@tertiary-casing, 30%);
 @residential-oneway-arrow-color:  darken(@residential-casing, 40%);
@@ -286,9 +287,9 @@
 @shield-clip: false;
 
 @shield-motorway-fill: #620728; // Lch(20,40,10), error 0.5
-@shield-trunk-fill: #5d1b0b; // Lch(21,40,42), error 0.5
-@shield-primary-fill: #4c2e00; // Lch(22,40,74), error 2.9
-@shield-secondary-fill: #323b00; // Lch(23,40,106), error 3.4
+@shield-trunk-fill: #000; //#5d1b0b; // Lch(21,40,42), error 0.5
+@shield-primary-fill: #000; //#4c2e00; // Lch(22,40,74), error 2.9
+@shield-secondary-fill: #000; // Lch(23,40,106), error 3.4
 @shield-tertiary-fill: #3b3b3b; // Lch(25,0,0), error 0.1
 
 .roads-casing, .bridges-casing, .tunnels-casing {
@@ -1089,7 +1090,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'highway_construction'] {
       [zoom >= 12] {
         line-width: 2;
-        line-color: #9cc;
+        line-color: @construction-marking;//#9cc;
 
         [construction = 'motorway'],
         [construction = 'motorway_link'] {
@@ -1131,17 +1132,17 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
           }
         }
         b/line-width: 2;
-        b/line-dasharray: 4,2;
+        b/line-dasharray: 4,1;
         b/line-color: white;
         [zoom >= 13] {
           line-width: 4;
           b/line-width: 3.5;
-          b/line-dasharray: 6,4;
+          b/line-dasharray: 6,2;
         }
         [zoom >= 16] {
           line-width: 8;
           b/line-width: 7;
-          b/line-dasharray: 8,6;
+          b/line-dasharray: 8,4;
         }
         [construction = 'footway'],
         [construction = 'cycleway'],
@@ -2436,7 +2437,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [zoom >= 12][way_pixels > 62.5] {
       text-name: "[name]";
       text-size: 8;
-      text-fill: black;
+      text-fill: white;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
@@ -2741,16 +2742,16 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 8;
-      text-fill: black;
+      text-fill: white;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
       [tunnel = 'no'] {
-        text-halo-radius: 1;
+        text-halo-radius: .8;
         [highway = 'motorway'] { text-halo-fill: @motorway-fill; }
-        [highway = 'trunk'] { text-halo-fill: @trunk-fill; }
-        [highway = 'primary'] { text-halo-fill: @primary-fill; }
+        [highway = 'trunk'] { text-halo-fill: #505151; /* @trunk-fill; */  }
+        [highway = 'primary'] { text-halo-fill: #505151; /*@primary-fill;*/ }
       }
     }
     [zoom >= 14] {

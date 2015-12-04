@@ -1,12 +1,12 @@
 @marina-text: #576ddf; // also swimming_pool
 @wetland-text: darken(#4aa5fa, 25%); /* Also for marsh and mud */
-@shop-icon: #ac39ac;
-@shop-text: #939;
-@transportation-icon: #0092da;
-@transportation-text: #0066ff;
+@shop-icon: #0C2227;
+@shop-text: #0C2227;
+@transportation-icon: #64929A;//#0092da;
+@transportation-text: #0C2227;//#0066ff;
 @airtransport: #8461C4;
-@health-color: #da0092;
-@amenity-brown: #310c0c; //#734a08;
+@health-color: #CE2028; //#da0092;
+@amenity-brown: #0C2227; //#734a08;
 @man-made-icon: #555;
 @landform-color: #d08f55;
 
@@ -103,7 +103,8 @@
   }
 
   [feature = 'amenity_cafe'][zoom >= 17] {
-    marker-file: url('symbols/cafe.16.svg');
+    //marker-file: url('symbols/cafe.16.svg');
+    marker-file: url('symbols/maps.md/coffee.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -150,7 +151,8 @@
   }
 
   [feature = 'amenity_cinema'][zoom >= 16] {
-    marker-file: url('symbols/cinema.16.svg');
+    //marker-file: url('symbols/cinema.16.svg');
+    marker-file: url('symbols/maps.md/cinema.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -257,8 +259,10 @@
   }
 
   [feature = 'amenity_library'][zoom >= 16] {
-    point-file: url('symbols/library.p.20.png');
-    point-placement: interior;
+    marker-file: url('symbols/maps.md/books.svg');
+    marker-fill: @amenity-brown;
+    marker-placement: interior;
+    marker-clip: false;
   }
 
   [feature = 'amenity_courthouse'][zoom >= 16] {

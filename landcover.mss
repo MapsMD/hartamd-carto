@@ -1,63 +1,64 @@
 // --- Parks, woods, other green things ---
 
-@grass: #cdebb0; // also meadow, common, garden, village_green
+@grass: #97C19C; // also meadow, common, garden, village_green
 @golf_course: #b5e3b5;
 @scrub: #b5e3b5;
-@forest: #add19e;       // Lch(80,30,135)
+@forest: #7EB688;       // Lch(80,30,135)
 @forest-text: #46673b;  // Lch(40,30,135)
-@park: #c8facc;         // Lch(94,30,145) also recreation_ground
-@orchard: #aedfa3;
+@park: #7EB688;         // Lch(94,30,145) also recreation_ground
+@orchard: #97C19C;
 
 // --- sports ---
 
-@stadium: #3c9; // also sports_centre
+@stadium: #97C19C; // also sports_centre
 @track: #74dcba;
 @pitch: #8ad3af;
 
 // --- "base" landuses ---
 
-@residential: #f2efe9; //#e0dfdf;      // Lch(89,0,0)
-@residential-line: #B9B9B9; // Lch(75,0,0)
-@retail: #FFD6D1;           // Lch(89,16,30)
+@residential: #DDE9EA; //#e0dfdf;      // Lch(89,0,0)
+@residential-line: #DDE9EA; // Lch(75,0,0)
+@retail: #E6EDEE;           // Lch(89,16,30)
 @retail-line: #D99C95;      // Lch(70,25,30)
-@commercial: #F2DAD9;       // Lch(89,8.5,25)
+@commercial: #E6EDEE;       // Lch(89,8.5,25)
 @commercial-line: #D1B2B0;  // Lch(75,12,25)
-@industrial: #dfdbd4; //#EBDBE8;       // Lch(89,9,330)
+@industrial: #E6EDEE; //#EBDBE8;       // Lch(89,9,330)
 @industrial-line: #9c9994; //#C6B3C3;  // Lch(75,11,330)
 @railway: @industrial;
 @railway-line: @industrial-line;
-@farmland: #EDDDC9;         // Lch(89,12,80) (Also used for farm)
-@farmland-line: #C8B69E;    // Lch(75,15,80)
+@farmland: #DDE7DA;         // Lch(89,12,80) (Also used for farm)
+@farmland-line: #DDE7DA;    // Lch(75,15,80)
 
-@farmyard: #EFD6B5;         // Lch(87,20,80)
-@farmyard-line: #D1B48C;    // Lch(75,25,80)
+@farmyard: #E6EDEE; //#EFD6B5;         // Lch(87,20,80)
+@farmyard-line: darken(@farmyard, 20%);//#D1B48C;    // Lch(75,25,80)
 
 // --- Other ----
 
 @aerodrome: #e9e7e2;
 @allotments: #e5c7ab;
-@apron: #e9d1ff;
+@apron: #CDBC9D;//#e9d1ff;
 @bare_ground: #eee5dc;
 @campsite: #def6c0; // also caravan_site, picnic_site
-@cemetery: #aacbaf; // also grave_yard
+@cemetery: #8CBCA5; // also grave_yard
 @construction: #b6b592;
 @danger_area: pink;
-@garages: #dfddce;
-@heath: #d6d99f;
+@garages: #CDBC9D;
+@heath: #E6EDEE;
 @mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
-@parking: #f7efb7;
-@place_of_worship: #cdccc9;
+@parking: #CDBC9D;
+@place_of_worship: #8CBCA5;
 @place_of_worship_outline: #111;
 @playground: #ccfff1;
 @power: darken(@industrial, 5%);
 @power-line: darken(@industrial-line, 5%);
 @rest_area: #efc8c8; // also services
 @sand: #f5e9c6;
-@educational_areas_and_hospital: #f0f0d8;
+@educational_areas_and_hospital: #E6EDEE; 
+@educational_areas_and_hospital_case: darken(@educational_areas_and_hospital, 15%); 
 @station: #d4aaaa;
 @tourism: #734a08;
 @quarry: #c5c3c3;
-@military: #f55;
+@military: #E6EDEE;  //#f55;
 @beach: #fff1ba;
 
 #landcover-low-zoom[zoom < 10],
@@ -139,6 +140,7 @@
     }
   }
 
+/*
   [feature = 'landuse_cemetery'],
   [feature = 'amenity_grave_yard'] {
     [zoom >= 10] {
@@ -156,6 +158,23 @@
         [way_pixels >= 4]  { polygon-pattern-gamma: 0.75; }
         [way_pixels >= 64] { polygon-pattern-gamma: 0.3;  }
       }
+    }
+  }
+*/
+
+  [feature = 'landuse_cemetery'] {
+    [zoom >= 10] {
+      polygon-fill: @cemetery;
+      [way_pixels >= 4]  { polygon-gamma: 0.75; }
+      [way_pixels >= 64] { polygon-gamma: 0.3;  }
+    }
+  }
+
+  [feature = 'landuse_grave_yard'] {
+    [zoom >= 10] {
+      polygon-fill: darken(@cemetery, 10%);
+      [way_pixels >= 4]  { polygon-gamma: 0.75; }
+      [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
   }
 
@@ -248,19 +267,19 @@
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
 
       [zoom=8] {
-        polygon-fill: lighten(@forest,10%);
+        polygon-fill: lighten(@forest,30%);
       }
       [zoom=9] {
-        polygon-fill: lighten(@forest,8%);
+        polygon-fill: lighten(@forest,24%);
       }
       [zoom=10] {
-        polygon-fill: lighten(@forest,6%);
+        polygon-fill: lighten(@forest,18%);
       }
       [zoom=11] {
-        polygon-fill: lighten(@forest,4%);
+        polygon-fill: lighten(@forest,12%);
       }
       [zoom=12] {
-        polygon-fill: lighten(@forest,2%);
+        polygon-fill: lighten(@forest,6%);
       }
     }
   }
@@ -469,7 +488,7 @@
         polygon-fill: @educational_areas_and_hospital;
         [zoom >= 13] {
           line-width: 0.3;
-          line-color: brown;
+          line-color: @educational_areas_and_hospital_case;
         }
       }
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
@@ -567,6 +586,7 @@
   }
 }
 
+/*
 #landcover-area-symbols {
   [int_wetland != null][zoom >= 10] {
     polygon-pattern-file: url('symbols/wetland.png');
@@ -605,12 +625,13 @@
     opacity: 0.4; // The entire layer has opacity to handle overlapping forests
   }
 }
+*/
 
 #landuse-overlay {
   [landuse = 'military'][zoom >= 7][way_pixels > 900],
   [landuse = 'military'][zoom >= 8][way_pixels > 100],
   [landuse = 'military'][zoom >= 10][way_pixels > 75] {
-    polygon-pattern-file: url('symbols/military_red_hatch.png');
+    polygon-pattern-file: url('symbols/military_grey_hatch.png');
     polygon-pattern-alignment: global;
     line-color: @military;
     line-width: 3;

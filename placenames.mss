@@ -1,11 +1,11 @@
-@placenames: #222;
+@placenames: #0C2227; //#222;
 @placenames-light: #777777;
 
 .country {
   [admin_level = '2'][zoom >= 2][way_pixels > 3000][way_pixels < 196000] {
     text-name: "[name]";
     text-size: 9;
-    text-fill: #9d6c9d;
+    text-fill: #0C2227;
     text-face-name: @book-fonts;
     text-halo-radius: 1.5;
     text-wrap-width: 50;
@@ -22,7 +22,7 @@
     [zoom >= 5][way_pixels > 3000][way_pixels < 196000] {
       text-name: "[ref]";
       text-size: 9;
-      text-fill: #9d6c9d;
+      text-fill: #0C2227;
       text-face-name: @oblique-fonts;
       text-halo-radius: 1.5;
       text-wrap-width: 0;

@@ -40,8 +40,10 @@
   }
 }
 
+/*
 #builtup {
   [zoom >= 8][zoom < 10] {
     polygon-fill: #ddd;
   }
 }
+*/

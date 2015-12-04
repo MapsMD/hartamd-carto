@@ -22,5 +22,5 @@ Map {
                 "Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal",
                 "Droid Sans Fallback Regular",  "unifont Medium"; //"Unifont Medium",
 */
-@water-color: #b5d0d0;
-@land-color: #f2efe9;
+@water-color: #ADDFE6; //#b5d0d0;
+@land-color: #F4FAFA; //#f2efe9;
