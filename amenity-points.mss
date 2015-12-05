@@ -33,7 +33,8 @@
   }
 
   [feature = 'amenity_atm'][zoom >= 17] {
-    marker-file: url('symbols/atm.16.svg');
+    //marker-file: url('symbols/atm.16.svg');
+    marker-file: url('symbols/maps.md/atm.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -159,7 +160,8 @@
   }
 
   [feature = 'amenity_nightclub'][zoom >= 17] {
-    marker-file: url('symbols/nightclub.14.svg');
+    //marker-file: url('symbols/nightclub.14.svg');
+    marker-file: url('symbols/maps.md/nightclub.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -259,7 +261,7 @@
   }
 
   [feature = 'amenity_library'][zoom >= 16] {
-    marker-file: url('symbols/maps.md/books.svg');
+    marker-file: url('symbols/maps.md/book.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -294,7 +296,8 @@
   }
 
   [feature = 'tourism_museum'][zoom >= 16] {
-    marker-file: url('symbols/museum.16.svg');
+    //marker-file: url('symbols/museum.16.svg');
+    marker-file: url('symbols/maps.md/museum.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -355,7 +358,8 @@
     marker-placement: interior;
     marker-clip: false;
     [religion = 'christian'] {
-      marker-file: url('symbols/christian.16.svg');
+      //marker-file: url('symbols/christian.16.svg');
+      marker-file: url('symbols/maps.md/church.svg');
       [denomination = 'jehovahs_witness']{
         marker-file: url('symbols/place_of_worship.16.svg');
       }
@@ -413,7 +417,8 @@
   }
 
   [feature = 'amenity_pub'][zoom >= 17] {
-    marker-file: url('symbols/pub.16.svg');
+    //marker-file: url('symbols/pub.16.svg');
+    marker-file: url('symbols/maps.md/pub.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -438,14 +443,16 @@
 
   [feature = 'amenity_restaurant'][zoom >= 17],
   [feature = 'amenity_food_court'][zoom >= 17] {
-    marker-file: url('symbols/restaurant.16.svg');
+    //marker-file: url('symbols/restaurant.16.svg');
+    marker-file: url('symbols/maps.md/restaurant.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
   }
 
   [feature = 'amenity_fast_food'][zoom >= 17] {
-    marker-file: url('symbols/fast_food.16.svg');
+    //marker-file: url('symbols/fast_food.16.svg');
+    marker-file: url('symbols/maps.md/fastfood.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -466,7 +473,8 @@
   }
 
   [feature = 'amenity_theatre'][zoom >= 16] {
-    marker-file: url('symbols/theatre.16.svg');
+    //marker-file: url('symbols/theatre.16.svg');
+    marker-file: url('symbols/maps.md/theater.svg');
     marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
@@ -973,7 +981,10 @@
   }
 
   [feature = 'natural_spring'][zoom >= 14] {
-    marker-file: url('symbols/spring.svg');
+    //marker-file: url('symbols/spring.svg');
+    marker-file: url('symbols/maps.md/spring_8.svg');
+    //marker-width: 8;
+    //marker-height: 8;
     marker-placement: interior;
     marker-clip: false;
   }
