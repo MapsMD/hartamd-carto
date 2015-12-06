@@ -8,6 +8,11 @@ It's probably easiest to grab an PBF of OSM data from [Mapzen](https://mapzen.co
 osm2pgsql -d gis ~/path/to/data.osm.pbf --style openstreetmap-carto.style
 
 osm2pgsql -d gis ~/2015-12-03.osm.pbf --style mapsmd-carto.style
+
+osm2pgsql --create --slim \
+    --cache 1000 --number-processes 2 --hstore \
+    --style ~/mapsmd-today/mapsmd-carto.style --multi-geometry \
+    ~/2015-12-03.osm.pbf
 ```
 
 You can find a more detailed guide to setting up a database and loading data with osm2pgsql at [switch2osm.org](http://switch2osm.org/loading-osm-data/).
