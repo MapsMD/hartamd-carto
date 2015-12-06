@@ -1,22 +1,22 @@
-#interpolation {
-  [zoom >= 17] {
-    line-color: #888;
-    line-width: 1;
-    line-dasharray: 2,4;
-  }
-}
+//#interpolation {
+//  [zoom >= 17] {
+//    line-color: #888;
+//    line-width: 1;
+//    line-dasharray: 2,4;
+//  }
+//}
 
-#housenumbers {
-  [zoom >= 17] {
-    text-name: "[addr:housenumber]";
-    text-placement: interior;
-    text-min-distance: 1;
-    text-wrap-width: 0;
-    text-face-name: @book-fonts;
-    text-fill: #666;
-    text-size: 9;
-  }
-}
+//#housenumbers {
+//  [zoom >= 17] {
+//    text-name: "[addr:housenumber]";
+//    text-placement: interior;
+//    text-min-distance: 1;
+//    text-wrap-width: 0;
+//    text-face-name: @book-fonts;
+//    text-fill: #666;
+//    text-size: 9;
+//  }
+//}
 
 #housenames {
   [zoom >= 17] {
